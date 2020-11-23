@@ -1,0 +1,87 @@
+.products{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    
+  }
+  .card{
+    animation: moveinBottom 0.9s ease-in-out , 8s;
+  }
+  .products .card{
+    max-width: 370px;
+    width: 100%;
+    overflow: hidden;
+    height: 570px;
+    box-shadow: 0 0 5px #ccc;
+    
+    margin: 15px;
+    cursor: pointer; 
+    animation: moveinBottom 1.5  0.2 ease;
+  }
+  .card img{
+    width: 370px;
+    height: 330px;
+  
+    max-height: 340px;
+    display: block;
+    object-fit: cover;
+  }
+  .card .box{
+    margin: 15px 0;
+  }
+  .card .box h3{
+    text-transform: uppercase;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .card .box h3:hover{
+    text-decoration: none !important;
+    color:aqua;
+
+  }
+  .box h3 :hover{
+    text-decoration: none;
+    color:red;
+  }
+  
+  .card .box p{
+    margin: 10px 0;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    height: 70px;
+  }
+  .card .box h4{
+    color: crimson;
+  }
+  .card .box button{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin: 10px 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  @keyframes moveinBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+  
+    }
+  
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+  }

@@ -1,0 +1,36 @@
+body{
+    background:radial-gradient(#e5e5e5,#fff,#e5e5e5);
+}
+.aboutcard{
+    padding: 10px 50px;
+}
+
+.card{
+    width: 372px;
+    border-radius: 50px 0 ;
+   
+
+}
+.img{
+    width: 370px;
+    border-radius: 50px 0;
+}
+.card:hover{
+    box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.253);
+    transform: scale(1.01);
+    transition: transform 0.5 ease;
+}
+.cardspace{
+    width: 30rem;
+  
+}
+.imglocation{
+    width: 50px !important;
+    height: 50px !important;
+    padding: 0 0px;
+    margin-left:155px ;
+     
+    justify-content: center !important;
+    align-items: center !important;
+    
+}
